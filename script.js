@@ -923,6 +923,10 @@ requestAnimationFrame(frame);
   function getC(n){var m=document.cookie.match(new RegExp("(?:^|; )"+n+"=([^;]*)"));return m?m[1]:null;}
   function setC(n,v){document.cookie=n+"="+v+"; max-age=31536000; path=/; SameSite=Lax"+(location.protocol==="https:"?"; Secure":"");}
   function choice(){var c=getC("bc_cookies");if(!c){try{c=localStorage.getItem("bc_cookies");}catch(e){}}return c;}
+  /* PUT YOUR TIP LINK BETWEEN THE QUOTES (Ko-fi, Buy Me a Coffee, Paystack or Flutterwave link). Leave empty to hide the button. */
+  window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments);};
+  var SUPPORT_URL="";
+  if(SUPPORT_URL){var tb=$("tipBtn");tb.href=SUPPORT_URL;tb.style.display="";}
   window.BC_CONSENT=choice()||"none";
   function pick(v){setC("bc_cookies",v);try{localStorage.setItem("bc_cookies",v);}catch(e){}window.BC_CONSENT=v;$("cookie").classList.remove("on");}
   $("ckOk").addEventListener("click",function(){pick("all");});

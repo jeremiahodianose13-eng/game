@@ -3,13 +3,32 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
-<title>Build Craft</title>
+<title>Build Craft: build your own village</title>
+<meta name="description" content="Build your own village block by block, make friends with the villagers, swim, and sleep until morning. 120 materials to unlock. Play free.">
+<meta name="theme-color" content="#0b0f18">
+<script defer src="/_vercel/insights/script.js"></script>
+<link rel="apple-touch-icon" href="icon.png">
+<link rel="icon" type="image/png" sizes="256x256" href="icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Build Craft">
+<meta property="og:title" content="Build Craft: build your own village">
+<meta property="og:description" content="Build houses block by block, make friends with villagers, swim in water and sleep until morning. 120 materials to unlock. Play free.">
+<meta property="og:url" content="https://buildcraft-ashen.vercel.app/">
+<meta property="og:image" content="https://buildcraft-ashen.vercel.app/cover.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Build Craft: a block village with houses and lanterns">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Build Craft: build your own village">
+<meta name="twitter:description" content="Build houses block by block, make friends with villagers and sleep until morning. Play free.">
+<meta name="twitter:image" content="https://buildcraft-ashen.vercel.app/cover.jpg">
+
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=IBM+Plex+Sans:wght@400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=IBM+Plex+Sans:wght@400;500&display=swap"></noscript>
 <link rel="stylesheet" href="style.css">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23101622'/%3E%3Cpath d='M32 10l20 11v22L32 54 12 43V21z' fill='%23b8603a'/%3E%3Cpath d='M32 10l20 11-20 11-20-11z' fill='%23f2b134'/%3E%3Cpath d='M32 32v22L12 43V21z' fill='%238a4528'/%3E%3C/svg%3E">
 </head>
 <body>
-<div id="cookie" role="dialog" aria-label="Cookies"><p><b>Cookies and storage.</b> Build Craft keeps your account, worlds in your browser so the game can save (essential). A small cookie remembers this choice. No ads or tracking are used right now.</p><div class="row2"><button class="btn" id="ckOk" type="button">Accept</button><button class="btn alt" id="ckNo" type="button">Essential only</button></div></div>
+<div id="cookie" role="dialog" aria-label="Cookies"><p><b>Cookies and storage.</b> Build Craft keeps your account, worlds in your browser so the game can save (essential). A small cookie remembers this choice. No ads are used. Anonymous visit counts show us how many people play.</p><div class="row2"><button class="btn" id="ckOk" type="button">Accept</button><button class="btn alt" id="ckNo" type="button">Essential only</button></div></div>
 <canvas id="cv"></canvas>
 <nav id="nav"><span class="logo">BUILD CRAFT</span><a href="#home">Home</a><a href="#worlds">Worlds</a><a href="#shop">Shop</a><a href="#people">People</a><a href="#help">Help</a></nav>
 
@@ -17,7 +36,7 @@
   <h1>BUILD<br>CRAFT</h1>
   <p>Gather materials, raise your own house block by block and make friends with the villagers who live around you.</p>
   <div class="row"><a class="btn" href="#worlds">Play</a><a class="btn alt" href="#shop">Shop</a><a class="btn alt" href="#people">People</a><a class="btn alt" href="#help">How to play</a></div>
-  <div class="who"><span id="who"></span> <button class="btn alt sm" id="logoutBtn" type="button">Log out</button></div>
+  <div class="who"><span id="who"></span> <button class="btn alt sm" id="logoutBtn" type="button">Log out</button> <a class="btn alt sm" id="tipBtn" href="#" target="_blank" rel="noopener" style="display:none">Support the game</a></div>
   <div class="seg" id="devRow" aria-label="Screen layout"><button class="btn alt sm" data-dev="auto">Auto</button><button class="btn alt sm" data-dev="phone">Phone</button><button class="btn alt sm" data-dev="tablet">Tablet</button><button class="btn alt sm" data-dev="laptop">Laptop</button></div>
 </div></section>
 
